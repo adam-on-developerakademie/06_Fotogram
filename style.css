@@ -13,18 +13,28 @@ html {
 }
 
 body {
+     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: "Merriweather_120pt-ExtraBold";
     background-color: #171717;
-    margin: 0;
     font-size: 20px;
     font-weight: lighter;
+
 }
 
 header {
-    background-color: #0e0e0e;
+    max-width: 1920px;
+    width: 100%;
+    padding-left: 100%;
+    padding-right: 100%;
+    position: fixed;
+    top:  0;
     height: 100px;
     display: flex;
     align-items: center;
+    background-color: #0e0e0e;
 }
 
 @media (max-width: 700px) {
@@ -57,6 +67,9 @@ header img {
 }
 
 main {
+    margin-top: 50px;
+    max-width: 1920px;
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,6 +77,22 @@ main {
     padding-right: 50px;
     color: white;
 }
+
+@media (max-width: 700px) {
+    main {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    main {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
 
 main h1 {
     padding-top: 50px;
@@ -102,8 +131,8 @@ main h1 {
 
 @media (max-width: 500px) {
     .images {
-        height: 50px;
-        width: 50px;
+        height: 70px;
+        width: 70px;
         margin: 1px;
     }
 }
@@ -118,6 +147,7 @@ main h1 {
 #container {
     max-height: 560px;
     height: 100%;
+    max-width: 1920px;
     width: 100%;
     overflow: hidden;
     margin: auto;
@@ -133,9 +163,7 @@ main h1 {
 }
 
 @media (max-width: 500px) {
-    #container {
-        max-height: 280px;
-    }
+    #container {}
 }
 
 
@@ -178,7 +206,7 @@ main h1 {
 @media (max-width: 500px) {
     .imageViewer {
         height: 450px;
-        width: 250px;
+        width: 280px;
     }
 }
 
@@ -190,14 +218,14 @@ main h1 {
 @media (max-width: 700px) {
     .photo {
         max-height: 320px;
-        max-width: 300px;
+        max-width: 320px;
     }
 }
 
 @media (max-width: 500px) {
     .photo {
-        max-height: 220px;
-        max-width: 200px;
+        max-height: 250px;
+        max-width: 240px;
     }
 }
 
@@ -211,14 +239,14 @@ main h1 {
 
 @media (max-width: 700px) {
     #imageNameContainerId {
-        max-width: 300px;
+        max-width: 320px;
         font-size: 15px;
     }
 }
 
 @media (max-width: 500px) {
     #imageNameContainerId {
-        max-width: 200px;
+        max-width: 240px;
         font-size: 10px;
     }
 }
@@ -233,19 +261,25 @@ main h1 {
 
 @media (max-width: 700px) {
     #buttonsId {
-        max-width: 300px;
+        max-width: 320px;
     }
 }
 
 @media (max-width: 500px) {
     #buttonsId {
-        max-width: 200px;
+        max-width: 240px;
     }
 }
 
 .buttons {
     cursor: pointer;
     height: 50px;
+}
+
+@media (max-width: 500px) {
+    .buttons {
+        height: 30px;
+    }
 }
 
 .buttons:hover {
@@ -256,14 +290,17 @@ main h1 {
 
 
 footer {
+    max-width: 1920px;
+    width: 100%;
+    padding-left: 100%;
+    padding-right: 100%;
     position: fixed;
     bottom: 0;
-    width: 100%;
-    background-color: #0e0e0e;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: right;
-    height: 100px;
+    background-color: #0e0e0e;
 }
 
 @media (max-width: 700px) {
